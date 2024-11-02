@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="zh-tw" xml:lang="zh-tw">
+<head>
+    <title>成功大學數位學習平臺: 登入本網站</title>
+    <link rel="shortcut icon" href="https://moodle.ncku.edu.tw/theme/image.php/fordson/theme/1692324800/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 成功大學數位學習平臺: 登入本網站" />
+<link rel="stylesheet" type="text/css" href="https://moodle.ncku.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://moodle.ncku.edu.tw/theme/styles.php/fordson/1692324800_1/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.ncku.edu.tw","sesskey":"fRPHG14oOC","sessiontimeout":"7200","themerev":"1692324800","slasharguments":1,"theme":"fordson","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1697675363","admin":"admin","svgicons":true,"usertimezone":"Asia\/Taipei","contextid":1,"langrev":1724898161,"templaterev":"1692324800"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.ncku.edu.tw\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.ncku.edu.tw\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.ncku.edu.tw\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.ncku.edu.tw\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.ncku.edu.tw\/theme\/yui_combo.php?m\/1697675363\/","combine":true,"comboBase":"https:\/\/moodle.ncku.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"m\/1697675363\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wordimport-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.ncku.edu.tw\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.ncku.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1697675363\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.ncku.edu.tw\/lib\/javascript.php\/1697675363\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.ncku.edu.tw\/lib\/javascript.php\/1697675363\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/moodle.ncku.edu.tw\/lib\/MathJax-2.7.6\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-login-index" class="format-site  path-login dir-ltr lang-zh_tw yui-skin-sam yui3-skin-sam moodle-ncku-edu-tw pagelayout-login course-1 context-1 notloggedin ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳到主要內容</a>
+</div><script type="text/javascript" src="https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/babel-polyfill/polyfill.min.js"></script>
+<script type="text/javascript" src="https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/mdn-polyfills/polyfill.js"></script>
+<script type="text/javascript" src="https://moodle.ncku.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <div id="page" class="container-fluid mt-0 ">
+        <div id="page-content" class="row">
+                <section id="region-main" class="col-12">
+                        <div class="loginslideshow">
+                            
+                        </div>
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><div class="my-1 my-sm-5"></div>
+<div class="row justify-content-center">
+<div class="col-xl-6 col-sm-8 ">
+<div class="card">
+    <div class="card-block">
+            <h2 class="card-header text-center">成功大學數位學習平臺</h2>
+        <div class="card-body">
+
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-5">
+                    <form class="mt-3" action="https://moodle.ncku.edu.tw/login/index.php" method="post" id="login">
+                        <input id="anchor" type="hidden" name="anchor" value="">
+                        <script>document.getElementById('anchor').value = location.hash;</script>			
+                        <input type="hidden" name="logintoken" value="e7soMUR1uz4GFsv8nxcMB5HE6ZNKoDVu">			
+                        <div class="form-group">
+                            <label for="username" class="sr-only">
+                                    帳號
+                            </label>
+                            <input type="text" name="username" id="username"
+                                class="form-control"
+                                value=""
+                                placeholder="帳號"
+                                autocomplete="username">
+                        </div>
+			
+                        <div class="form-group">			
+                            <label for="password" class="sr-only">密碼</label>			
+                            <input type="password" name="password" id="password" value=""
+                                class="form-control"
+                                placeholder="密碼"
+                                autocomplete="current-password">
+                        </div>
+			
+            		<div class="login-form-recaptcha form-group">
+                	<script type="text/javascript">
+                function refresh_code(){
+                    document.getElementById("imgcode").src="https://moodle.ncku.edu.tw/lib/imgcode.php?t=1730397533"
+                }
+            </script><label for="imgcode">圖形驗證碼</label><input type="text" name="vcode" class="reg_vcode" id="reg_vcode" value="" /><img id="imgcode" src="https://moodle.ncku.edu.tw/lib/imgcode.php?t=1730397533"  onclick="refresh_code()" />
+            		</div>
+
+                            <div class="rememberpass mt-3">
+                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                                <label for="rememberusername">記住帳號</label>
+                            </div>
+
+                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">登入</button>
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="forgetpass mt-3">
+                        <p><a href="https://moodle.ncku.edu.tw/login/forgot_password.php">忘記帳號或密碼嗎？</a></p>
+                    </div>
+
+                    <div class="mt-3">
+                        您的瀏覽器必須啟動 Cookies 功能
+                        <a class="btn btn-link p-0" role="button"
+    data-container="body" data-toggle="popover"
+    data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;本站使用了兩個cookie：&lt;/p&gt;
+
+&lt;p&gt;最重要的是連線cookie，通常叫做 MoodleSession。您必須在瀏覽器裡允許這個cookie，以便使您的登入在頁與頁之間連續有效。當您登離或關閉瀏覽器，這個cookie在瀏覽器和伺服器裡都會被刪除。&lt;/p&gt;
+
+&lt;p&gt;另一個cookie純粹是為了方便，通常被叫做類似 MOODLEID 之類的名字。它只用來在瀏覽器裡記住您的用戶名。這意味著當您再次回到本站，登入頁面裡的用戶名已經替您填好了。拒絕此cookie是安全的，只不過每次登入都要重新輸入用戶名而已。&lt;/p&gt;
+&lt;/div&gt; "
+    data-html="true" tabindex="0" data-trigger="focus">
+  <i class="icon fa fa-question-circle text-info fa-fw "  title="您的瀏覽器必須啟動 Cookies 功能的輔助" aria-label="您的瀏覽器必須啟動 Cookies 功能的輔助"></i>
+</a>
+                    </div>
+                        <div class="mt-2">
+                            <p>有些課程可能允許訪客瀏覽</p>
+                            <form action="https://moodle.ncku.edu.tw/login/index.php" method="post" id="guestlogin">
+                                <input type="hidden" name="logintoken" value="e7soMUR1uz4GFsv8nxcMB5HE6ZNKoDVu">
+                                <input type="hidden" name="username" value="guest" />
+                                <input type="hidden" name="password" value="guest" />
+                                <button class="btn btn-secondary btn-block" type="submit">以訪客身分登入</button>
+                            </form>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="row justify-content-center mt-3">
+<div class="col-xl-6 col-sm-8">
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>您第一次來訪嗎？</h2>
+        </div>
+        <div>
+        <table border="1" cellspacing="0" cellpadding="0"><tbody><tr><th scope="col" colspan="2"><strong>成大教職員工生(NCKU member)</strong></th></tr><tr><th scope="row"> 專任老師/學生/職員(teachers/students/employee)<br /><br /><br /></th><td><span style="font-size:small;">本教學系統已結合<a href="http://i.ncku.edu.tw/" target="_blank" title="連結至成功入口(另開新視窗)" rel="noreferrer noopener">成功入口</a>，請輸入成功入口的帳號、密碼。(學生請輸入<span style="color:rgb(255,0,0);">學號</span>，專任老師/職員請輸入<span style="color:rgb(255,0,0);">員工號</span>)。<span style="color:rgb(255,0,0);">學生畢業半年後即無法登入。</span></span><br /><span style="font-size:small;"> Use <a href="http://i.ncku.edu.tw/" target="_blank" title="Link to Cheng-Kung Portal(new window)" rel="noreferrer noopener">Cheng-Kung Portal</a> account and password. Student : input Student No. Teachers/employee : input employee No. <span style="color:rgb(255,0,0);">Students are unable to log in six months after graduation.</span></span></td></tr><tr><th scope="row"> 兼任教師(adjunct teacher)<br /><br /><br /></th><td><span style="font-size:small;">請以身分證號為登入帳號，密碼預設值為<span style="color:#ff0000;">身分證後四碼加生日後四碼共八碼</span></span><br /><span style="font-size:small;"> Choose "ID number" as account and default password(The last four digits of one’s personal ID number plus four digits of one’s birthday).</span></td></tr><tr><th scope="col" colspan="2"><strong>外校學生/Outside student</strong></th></tr><tr><th scope="row"> 校際選課學生(enroll semester course)<br /><br /><br /></th><td><span style="font-size:small;">請參考<a href="https://cid-acad.ncku.edu.tw/p/412-1042-27836.php?Lang=zh-tw" target="_blank" title="連結至校際選課說明頁面(另開新視窗)" rel="noreferrer noopener">校際選課</a>。 </span><br /><span style="font-size:small;"> Please refer to <a href="https://cid-acad.ncku.edu.tw/p/412-1042-27836.php?Lang=zh-tw" target="_blank" title="校際選課說明(new window)" rel="noreferrer noopener">this page</a></span></td></tr><tr><th scope="row"> 暑修學生(enroll summer course)<br /><br /><br /></th><td><span style="font-size:small;">請參考<a href="https://cid-acad.ncku.edu.tw/p/412-1042-8412.php?Lang=zh-tw" target="_blank" title="連結至暑修說明頁面(另開新視窗)" rel="noreferrer noopener">暑修資訊</a>。 </span><br /><span style="font-size:small;"> Please refer to <a href="https://cid-acad.ncku.edu.tw/p/412-1042-8412.php?Lang=zh-tw" target="_blank" title="暑修說明(new window)" rel="noreferrer noopener">this page</a></span></td></tr><tr><th scope="col" colspan="2"><strong>常見問題</strong></th></tr><tr><td colspan="2"><span style="font-size:small;"><strong><span style="font-size:large;">輸入成功入口帳號、密碼無法登入</span></strong></span><br /><span style="font-size:small;">問：我無法登入MOODLE系統，已試過在「成功入口」再更改一次密碼，還是都無法登入，但其他同學可以，請問怎麼辦？<br />答：帳號及密碼均由「成功入口」統一控管，有少部份同學會發生此現象，同學可將學號、姓名Email到<a href="mailto:lionlai@mail.ncku.edu.tw" style="font-size:small;">負責人員</a>，處理完畢後會回覆給您。<br /><span style="font-size:small;"><strong><span style="font-size:large;">畢業生還能使用成大數位學習平臺嗎?</span></strong><br />數位學習平臺主要作為學期正規課程的輔助教學平臺，故學生畢業半年後即無法登入「數位學習平臺」。數位學習平臺為課程輔助教學工具，並不是雲端儲存系統，所以平時應自行儲存、備份課程所需資料。</span></span></td></tr></tbody></table>
+        </div>
+    </div>
+</div>
+</div>
+</div></div>
+                        <div class="customloginspacer"></div>
+                    
+                </section>
+        </div>
+    </div>
+    
+    <footer id="page-footer" class="py-3 text-light">
+        <div class="container">
+    
+            <div id="course-footer"></div>
+    
+            <div class="row">
+    
+                    <div class="col-md-8">
+                        <div class="text_to_html"><p>國立成功大學 版權所有 | Copyright © National Cheng Kung University all rights reserved</p><p><a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20230731133004" title="無障礙網站"><img src="https://moodle.ncku.edu.tw/pluginfile.php/1371089/mod_resource/content/1/accessibility_badge.png" border="0" width="88" height="31" alt="通過A無障礙網頁檢測" /></a></p></div>Site:172.16.249.85
+    <!--
+                        <div class="logininfo">您尚未登入</div>
+    
+                        <div class="homelink"><a href="https://moodle.ncku.edu.tw/">首頁</a></div>
+    
+    -->
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="brandbox">
+    			<!--
+                            <h3>國立成功大學計算機與網路中心</h3>
+    			-->
+    			<strong>國立成功大學計算機與網路中心</strong>
+                                <ul class="footercontact">
+                                    <li><i class="fa fa-globe"></i>  http://cc.ncku.edu.tw/</li>
+                                    <li><i class="fa fa-envelope"></i>  sfkuo@ncku.edu.tw</li>
+                                    <li><i class="fa fa-mobile-phone"></i>  (06)275-7575 #61056</li>
+                                </ul>
+    
+                            
+    
+                        </div>
+                    </div>
+    
+            </div>
+            <nav class="nav navbar-nav d-md-none">
+                    <ul class="list-unstyled pt-3">
+                                        <li><a href="#" title="語言">正體中文 ‎(zh_tw)‎</a></li>
+                                    <li>
+                                        <ul class="list-unstyled ml-3">
+                                                            <li><a href="https://moodle.ncku.edu.tw/login/index.php?lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a></li>
+                                                            <li><a href="https://moodle.ncku.edu.tw/login/index.php?lang=ja" title="日本語 ‎(ja)‎">日本語 ‎(ja)‎</a></li>
+                                                            <li><a href="https://moodle.ncku.edu.tw/login/index.php?lang=zh_tw" title="正體中文 ‎(zh_tw)‎">正體中文 ‎(zh_tw)‎</a></li>
+                                                            <li><a href="https://moodle.ncku.edu.tw/login/index.php?lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                        </ul>
+                                    </li>
+                    </ul>
+            </nav>
+            
+            
+<!-- google -->
+<!--
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58613150-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V5263G30EE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V5263G30EE');
+</script>
+
+<script>
+        document.addEventListener("keyup", disableSubmenu);
+        function disableSubmenu(e) {
+            var y = document.getElementById("nav_button");
+            var status = y.getAttribute("aria-expanded");
+            if(status=="false"){
+                $("ul li a.list-group-item").attr("tabindex", -1);
+            }
+            else{
+                $("ul li a.list-group-item").attr("tabindex", 0);
+            }
+        }
+    </script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.ncku.edu.tw/lib/requirejs.php/1697675363/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://moodle.ncku.edu.tw/lib/javascript.php/1697675363/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://moodle.ncku.edu.tw/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('zh-CN', {
+  "Play": "播放",
+  "Pause": "暂停",
+  "Current Time": "当前时间",
+  "Duration": "时长",
+  "Remaining Time": "剩余时间",
+  "Stream Type": "媒体流类型",
+  "LIVE": "直播",
+  "Loaded": "加载完毕",
+  "Progress": "进度",
+  "Fullscreen": "全屏",
+  "Non-Fullscreen": "退出全屏",
+  "Mute": "静音",
+  "Unmute": "取消静音",
+  "Playback Rate": "播放速度",
+  "Subtitles": "字幕",
+  "subtitles off": "关闭字幕",
+  "Captions": "内嵌字幕",
+  "captions off": "关闭内嵌字幕",
+  "Chapters": "节目段落",
+  "Close Modal Dialog": "关闭弹窗",
+  "Descriptions": "描述",
+  "descriptions off": "关闭描述",
+  "Audio Track": "音轨",
+  "You aborted the media playback": "视频播放被终止",
+  "A network error caused the media download to fail part-way.": "网络错误导致视频下载中途失败。",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "视频因格式不支持或者服务器或网络的问题无法加载。",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
+  "No compatible source was found for this media.": "无法找到此视频兼容的源。",
+  "The media is encrypted and we do not have the keys to decrypt it.": "视频已加密，无法解密。",
+  "Play Video": "播放视频",
+  "Close": "关闭",
+  "Modal Window": "弹窗",
+  "This is a modal window": "这是一个弹窗",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "可以按ESC按键或启用关闭按钮来关闭此弹窗。",
+  ", opens captions settings dialog": ", 开启标题设置弹窗",
+  ", opens subtitles settings dialog": ", 开启字幕设置弹窗",
+  ", opens descriptions settings dialog": ", 开启描述设置弹窗",
+  ", selected": ", 选择",
+  "captions settings": "字幕设定",
+  "Audio Player": "音频播放器",
+  "Video Player": "视频播放器",
+  "Replay": "重播",
+  "Progress Bar": "进度条",
+  "Volume Level": "音量",
+  "subtitles settings": "字幕设定",
+  "descriptions settings": "描述设定",
+  "Text": "文字",
+  "White": "白",
+  "Black": "黑",
+  "Red": "红",
+  "Green": "绿",
+  "Blue": "蓝",
+  "Yellow": "黄",
+  "Magenta": "紫红",
+  "Cyan": "青",
+  "Background": "背景",
+  "Window": "视窗",
+  "Transparent": "透明",
+  "Semi-Transparent": "半透明",
+  "Opaque": "不透明",
+  "Font Size": "字体尺寸",
+  "Text Edge Style": "字体边缘样式",
+  "None": "无",
+  "Raised": "浮雕",
+  "Depressed": "压低",
+  "Uniform": "均匀",
+  "Dropshadow": "下阴影",
+  "Font Family": "字体库",
+  "Proportional Sans-Serif": "比例无细体",
+  "Monospace Sans-Serif": "单间隔无细体",
+  "Proportional Serif": "比例细体",
+  "Monospace Serif": "单间隔细体",
+  "Casual": "舒适",
+  "Script": "手写体",
+  "Small Caps": "小型大写字体",
+  "Reset": "重置",
+  "restore all settings to the default values": "恢复全部设定至预设值",
+  "Done": "完成",
+  "Caption Settings Dialog": "字幕设定视窗",
+  "Beginning of dialog window. Escape will cancel and close the window.": "开始对话视窗。离开会取消及关闭视窗",
+  "End of dialog window.": "结束对话视窗",
+  "Seek to live, currently behind live": "试图直播，当前延时播放",
+  "Seek to live, currently playing live": "试图直播，当前实时播放",
+  "progress bar timing: currentTime={1} duration={2}": "{1}/{2}",
+  "{1} is loading.": "正在加载 {1}。"
+});
+
+    });
+});;
+
+require(['jquery'], function($) {
+    $('#single_select6723c55d2eb7d3').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f6723c55d2eb7d2').submit();
+        }
+    });
+});
+;
+
+require(['theme_boost/loader']);
+;
+
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u6700\u5f8c\u4fee\u6539","name":"\u540d\u7a31","error":"\u932f\u8aa4","info":"\u8cc7\u8a0a","yes":"\u662f","no":"\u5426","cancel":"\u53d6\u6d88","confirm":"\u78ba\u8a8d","areyousure":"\u4f60\u78ba\u5b9a\u55ce\uff1f","closebuttontitle":"\u95dc\u9589","unknownerror":"\u672a\u77e5\u7684\u932f\u8aa4","file":"\u6a94\u6848","url":"\u7db2\u5740"},"repository":{"type":"\u985e\u578b","size":"\u5927\u5c0f","invalidjson":"\u7121\u6548\u7684JSON \u5b57\u4e32","nofilesattached":"\u6c92\u6709\u9644\u52a0\u6a94\u6848","filepicker":"\u6a94\u6848\u6311\u9078\u5668","logout":"\u767b\u51fa","nofilesavailable":"\u6c92\u6709\u53ef\u7528\u7684\u6a94\u6848","norepositoriesavailable":"\u62b1\u6b49\uff0c\u4f60\u73fe\u6709\u7684\u5009\u5132\u6c92\u6709\u4e00\u500b\u53ef\u4ee5\u56de\u5fa9\u6210\u8981\u6c42\u683c\u5f0f\u7684\u6a94\u6848\u3002","fileexistsdialogheader":"\u6a94\u6848\u5df2\u5b58\u5728","fileexistsdialog_editor":"\u6709\u4e00\u500b\u9019\u540d\u7a31\u7684\u6a94\u6848\u5df2\u7d93\u88ab\u9644\u52a0\u5230\u4f60\u6b63\u5728\u7de8\u8f2f\u7684\u6587\u5b57\u4e0a\u4e86","fileexistsdialog_filemanager":"\u6709\u4e00\u500b\u9019\u540d\u7a31\u7684\u6a94\u6848\u5df2\u7d93\u88ab\u9644\u52a0\u4e0a\u53bb\u4e86","renameto":"\u91cd\u65b0\u547d\u540d\u70ba{$a}","referencesexist":"\u9019\u88e1\u6709{$a}\u500b\u5225\u540d\/\u6377\u5f91\u6a94\u6848\u4f7f\u7528\u9019\u4e00\u500b\u6a94\u6848\u4f5c\u70ba\u4ed6\u5011\u8cc7\u6e90\u3002","select":"\u9078\u64c7"},"admin":{"confirmdeletecomments":"\u60a8\u5373\u5c07\u522a\u9664\u8a55\u8ad6\uff0c\u60a8\u78ba\u5b9a\u55ce\uff1f","confirmation":"\u78ba\u8a8d"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":"\uff1a"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"zh-hant"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random6723c55d2eb7d4'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6723c55d2eb7d4'); });
+})();
+//]]>
+</script>
+
+    
+        </div>
+    
+    </footer>
+</div>
+
+</body>
+</html>
