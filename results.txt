@@ -1,0 +1,18 @@
+Classifiers: ['knn', 'svm', 'dt']
+Train Size: 50
+Test Size: 100
+Accuracy: 0.0296
+F1 Score: 0.029098829054112253
+Precision: 0.029071557636601346
+Recall: 0.0296
+Time Taken: 85.44916439056396
+
+Classifiers: ['knn', 'svm', 'dt']
+Train Size: 100
+Test Size: 100
+Accuracy: 0.029
+F1 Score: 0.02918343051467799
+Precision: 0.02978293727524554
+Recall: 0.029
+Time Taken: 260.51253628730774
+
