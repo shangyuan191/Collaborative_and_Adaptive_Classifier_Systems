@@ -16,3 +16,21 @@ Precision: 0.02978293727524554
 Recall: 0.029
 Time Taken: 260.51253628730774
 
+Classifiers: ['knn', 'svm', 'dt']
+Train Size: 500
+Test Size: 100
+Accuracy: 0.0276
+F1 Score: 0.027669208023976825
+Precision: 0.028072047358474253
+Recall: 0.0276
+Time Taken: 14431.184752702713
+
+Classifiers: [('knn', KNeighborsClassifier()), ('random_forest', RandomForestClassifier())]
+Train Size: 500
+Test Size: 100
+Accuracy: 0.0904
+F1 Score: 0.07652754938050152
+Precision: 0.09689581952417203
+Recall: 0.0904
+Time Taken: 17330.66985297203
+

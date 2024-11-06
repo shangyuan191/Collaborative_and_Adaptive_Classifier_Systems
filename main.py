@@ -14,6 +14,10 @@ import torch.nn as nn
 from torchvision import transforms
 from torch.utils.data import DataLoader
 import time
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+
 from utils import data_util
 def read_path_label_csv():
     df=pd.read_csv("./path_label.csv")
@@ -35,12 +39,16 @@ if __name__=="__main__":
         train_data,test_data=myDataset.train_data,myDataset.test_data
         train_loader=DataLoader(train_data,batch_size=64,shuffle=True,num_workers=16)
         test_loader=DataLoader(test_data,batch_size=64,shuffle=True,num_workers=16)
-        
-        voting_clf = data_util.init_classifier()
+        knn = KNeighborsClassifier(n_neighbors=5)
+        svm = make_pipeline(StandardScaler(), SVC(kernel="linear", probability=True))
+        decision_tree = DecisionTreeClassifier()
+        random_forest = RandomForestClassifier()
+        estimators=[('knn', knn),('random_forest', random_forest)]
+        voting_clf = data_util.init_classifier(estimators)
+
         X_train, y_train = data_util.feature_extraction(train_loader)
         X_test, y_test = data_util.feature_extraction(test_loader)
         print("Begin training...")
-        clf_list=["knn","svm","dt"]
         voting_clf.fit(X_train, y_train)
         print("Training finished.")
         y_pred = voting_clf.predict(X_test)
@@ -55,6 +63,6 @@ if __name__=="__main__":
         
         time_taken=time.time()-start_time
         print("Time taken:", time_taken)
-        data_util.write_results_to_file("results.txt", acc, f1, precision, recall,clf_list,train_size,test_size,time_taken)
+        data_util.write_results_to_file("results.txt", acc, f1, precision, recall,estimators,train_size,test_size,time_taken)
             
         

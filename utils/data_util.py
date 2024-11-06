@@ -1,5 +1,6 @@
 from sklearn.ensemble import VotingClassifier
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
@@ -10,12 +11,9 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 
-def init_classifier():
-    knn = KNeighborsClassifier(n_neighbors=5)
-    svm = make_pipeline(StandardScaler(), SVC(kernel="linear", probability=True))
-    decision_tree = DecisionTreeClassifier()
+def init_classifier(estimators=None):
     voting_clf = VotingClassifier(
-        estimators=[('knn', knn), ('svm', svm), ('dt', decision_tree)],
+        estimators=estimators,
         voting='soft'
     )
     return voting_clf
@@ -28,8 +26,8 @@ def feature_extraction(data_loader, n_components=100):
         data_features.append(img.view(img.size(0), -1).numpy())
         data_labels.extend(label.numpy())
     data_features = np.vstack(data_features)
-    pca = PCA(n_components=n_components)
-    data_features = pca.fit_transform(data_features)
+    # pca = PCA(n_components=n_components)
+    # data_features = pca.fit_transform(data_features)
     return data_features, data_labels
 
 def write_results_to_file(filename, accuracy, f1, precision, recall,clf_list,train_size,test_size,time_taken):
