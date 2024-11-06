@@ -8,6 +8,39 @@ from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from concurrent.futures import ThreadPoolExecutor
 from sklearn.model_selection import train_test_split
+
+class MyImbalancedDataset:
+    def __init__(self, csv_file, transform=None):
+        self.df = pd.read_csv(csv_file)
+        self.transform = transform
+        self.train_df = pd.DataFrame(columns=self.df.columns)
+        self.test_df = pd.DataFrame(columns=self.df.columns)
+
+        total_train_samples = 0
+        for label in self.df['label'].unique():
+            now_df = self.df[self.df['label'] == label]
+
+            train_size = np.random.randint(30, 101)
+            total_train_samples += train_size
+
+            train_data = now_df.sample(n=train_size, random_state=42)
+            test_data = now_df.drop(train_data.index).sample(n=100, random_state=42)
+
+            self.train_df = pd.concat([self.train_df, train_data])
+            self.test_df = pd.concat([self.test_df, test_data])
+
+        self.average_train_samples = total_train_samples // len(self.df['label'].unique())
+        print(f"Average number of training samples per class: {self.average_train_samples}")
+
+        self.train_data = MiniImageNet(self.df2list(self.train_df), transform=self.transform)
+        self.test_data = MiniImageNet(self.df2list(self.test_df), transform=self.transform)
+
+    def df2list(self, df):
+        data = []
+        for i in range(len(df)):
+            data.append([df.iloc[i, 0], df.iloc[i, 1]])
+        return data
+
 class MyDataset:
     def __init__(self, csv_file,train_size=500,test_size=100, transform=None):
         self.df = pd.read_csv(csv_file)

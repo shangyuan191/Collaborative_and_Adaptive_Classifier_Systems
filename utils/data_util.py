@@ -9,7 +9,26 @@ from tqdm import tqdm
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-
+from imblearn.over_sampling import SMOTE
+from imblearn.under_sampling import RandomUnderSampler
+from imblearn.pipeline import Pipeline
+from collections import Counter
+import matplotlib.pyplot as plt
+def show_imbalance(df, save_path=None):
+    # 檢查每個類別的樣本數
+    class_counts = Counter(df['label'])
+    print("Class counts:", class_counts)
+    plt.bar(class_counts.keys(), class_counts.values())
+    plt.xlabel("Class")
+    plt.ylabel("Sample Count")
+    plt.title("Class Distribution")
+    
+    # 儲存圖片
+    if save_path:
+        plt.savefig(save_path, format='png', dpi=300, bbox_inches='tight')
+    
+    # 顯示圖片
+    plt.show()
 
 def init_classifier(estimators=None):
     voting_clf = VotingClassifier(
@@ -18,6 +37,18 @@ def init_classifier(estimators=None):
     )
     return voting_clf
 
+def init_pipeline_for_imbalance_scenario(estimators=None):
+    voting_clf = VotingClassifier(
+        estimators=estimators,
+        voting='soft'
+    )
+    pipeline = Pipeline([
+        ('sampling', SMOTE()),
+        ('voting', voting_clf)
+    ])
+    return pipeline
+
+    
 
 def feature_extraction(data_loader, n_components=100):
     data_features, data_labels = [], []
