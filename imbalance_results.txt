@@ -1,0 +1,18 @@
+Classifiers: [('rf', RandomForestClassifier(class_weight='balanced')), ('knn', KNeighborsClassifier(weights='distance'))]
+Train Size: 65
+Test Size: 100
+Accuracy: 0.0619
+F1 Score: 0.055461716660215425
+Precision: 0.07073681016874583
+Recall: 0.0619
+Time Taken: 5145.852680444717
+
+Classifiers: [('rf', RandomForestClassifier(class_weight='balanced')), ('knn', KNeighborsClassifier(weights='distance'))]
+Train Size: 168
+Test Size: 100
+Accuracy: 0.074
+F1 Score: 0.06566043957409767
+Precision: 0.08368274445274973
+Recall: 0.074
+Time Taken: 9839.255739688873
+
